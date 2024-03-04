@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="invitation">
+      <h1>Wedding Invitation Text Editor</h1>
+      <div class="editing">
+        <div class="left" id="text">
+          <!-- <canvas
+            id="myCanvas"
+            width="600"
+            height="700"
+            style="border: 1px solid #000000"
+          ></canvas> -->
+
+        </div>
+        <div class="right">
+          <div>
+            <h6>Font Style</h6>
+            <select id="font-selector">
+              <option value="Arial">Arial</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Arial Narrow">Arial Narrow</option>
+              <option value="Garamond, serif">Garamond, serif</option>
+              <option value="'Courier New', monospace">
+                'Courier New', monospace
+              </option> 
+              <option value="'Brush Script MT', cursive">
+                'Brush Script MT', cursive
+              </option>
+              <option value="Impact">Impact</option>
+              <option value="Segoe Print">Segoe Print</option>
+              <option value="Mongolian Baliti ">Mongolian Baliti </option>
+              <option value="Arial">Arial</option>
+              
+            </select>
+          </div>
+          <div>
+            <h6>Font Size</h6>
+            <select id="size-selector">
+              <option value="12">12px</option>
+              <option value="14">14px</option>
+              <option value="16">16px</option>
+              <option value="18">18px</option>
+              <option value="20">20px</option>
+              <option value="22">22px</option>
+              <option value="24">24px</option>
+              <option value="28">28px</option>
+              <option value="32">32px</option>
+              <option value="34">34px</option>
+              <option value="36">36px</option>
+            </select>
+          </div>
+          <div>
+            <h6>Font Weight</h6>
+            <select id="weight-selector">
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="300">300</option>
+              <option value="400">400</option>
+              <option value="500">500</option>
+              <option value="600">600</option>
+              <option value="700">700</option>
+              <option value="800">800</option>
+              <option value="bold">Bold</option>
+              <option value="bolder">Bolder</option>
+            </select>
+          </div>
+          <div>
+            <h6>Color</h6>
+            <input type="color" id="color-selector" />
+          </div>
+          <div class="text-area">
+            <textarea
+              id="text-input"
+              placeholder="Enter Your Text Here..."
+              rows="4" cols="37"
+            ></textarea>
+          </div>
+          <div class="buttons">
+            <button onclick="addText()">Add Text</button>
+            <button onclick="applyStyles()">Apply Changes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="card.js"></script>
+  </body>
+</html>
